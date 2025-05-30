@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF6ED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masuk"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#2E2E2E" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/caption_lgn"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="#6E6E6E" />
+
+        <!-- Email input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintWidth_max="488dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"
+                android:hint="@string/email"
+                android:drawableStart="@drawable/ic_profil"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintWidth_max="488dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"
+                android:hint="@string/pswd"
+                android:drawableStart="@drawable/ic_password"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Lupa Password -->
+        <TextView
+            android:id="@+id/txtLupaPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa password?"
+            android:textSize="14sp"
+            android:textColor="#A76E3D"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp" />
+
+        <!-- Tombol Masuk -->
+        <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/masuk"
+            android:backgroundTint="#6D4323"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Atau -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#BDBDBD" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  atau  "
+                android:textColor="#9E9E9E" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#BDBDBD" />
+        </LinearLayout>
+
+        <!-- Login dengan Google, Facebook, Apple -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnGoogle"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:src="@drawable/ic_email"
+                android:background="@android:color/transparent"
+                android:contentDescription="Login dengan Google" />
+
+            <ImageButton
+                android:id="@+id/btnFacebook"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:src="@drawable/ic_facebook"
+                android:background="@android:color/transparent"
+                android:contentDescription="Login dengan Facebook"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp" />
+
+            <ImageButton
+                android:id="@+id/btnApple"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:src="@drawable/ic_apple"
+                android:background="@android:color/transparent"
+                android:contentDescription="Login dengan Apple" />
+        </LinearLayout>
+
+        <!-- Belum punya akun -->
+        <TextView
+            android:id="@+id/txtDaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum mempunyai akun? Daftar"
+            android:layout_marginTop="24dp"
+            android:textColor="#6D4323" />
+
+    </LinearLayout>
+</ScrollView>

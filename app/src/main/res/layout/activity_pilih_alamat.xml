@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F4"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PilihAlamatActivity">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Kembali" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Pilih Alamat"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Daftar Alamat -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Item Alamat -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/rounded_border"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_location"
+                    android:contentDescription="Alamat" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trendify's"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Fatahillah IV Geuceu Iniem No. 13, Banda Aceh, NAD"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(+62) 813-0000-0000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Tambah alamat lainnya sesuai kebutuhan -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Tombol Gunakan Alamat Ini -->
+    <Button
+        android:id="@+id/btn_gunakan_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gunakan Alamat Ini"
+        android:backgroundTint="#5C3B28"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tambah Alamat Baru -->
+    <TextView
+        android:id="@+id/tambah_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Alamat Baru"
+        android:textAlignment="center"
+        android:textColor="#5C3B28"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

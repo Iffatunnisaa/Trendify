@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FDF7F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvPrivacyPolicyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kebijakan Privasi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Kebijakan Pembatalan -->
+        <TextView
+            android:id="@+id/tvCancellationPolicyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kebijakan Pembatalan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCancellationPolicyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengguna memiliki hak untuk membatalkan pesanan selama status pesanan belum masuk ke tahap pengiriman. Jika pesanan sudah dalam proses pengiriman, maka pembatalan tidak dapat dilakukan. Untuk proses pembatalan, pengguna dapat mengakses halaman \Pesanan Saya\ dan memilih opsi pembatalan yang tersedia. Dana akan dikembalikan sesuai metode pembayaran dalam waktu 3–5 hari kerja setelah pembatalan disetujui."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Syarat dan Ketentuan -->
+        <TextView
+            android:id="@+id/tvTermsConditionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Syarat dan Ketentuan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvTermsConditionsContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dengan menggunakan aplikasi ini, pengguna dianggap telah membaca, memahami, dan menyetujui semua ketentuan yang berlaku. Pengguna bertanggung jawab atas keakuratan informasi yang diberikan saat melakukan transaksi, termasuk nama, alamat, dan metode pembayaran.\n\nKami berhak mengubah atau menghentikan layanan kapan saja tanpa pemberitahuan terlebih dahulu. Pengguna dilarang menyalahgunakan layanan, termasuk melakukan tindakan penipuan atau pelanggaran hukum lainnya."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Privasi dan Perlindungan Data -->
+        <TextView
+            android:id="@+id/tvPrivacyDataProtectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privasi dan Perlindungan Data"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacyDataProtectionContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kami berkomitmen untuk menjaga kerahasiaan dan keamanan data pribadi Anda. Informasi seperti nama, email, alamat, dan data transaksi disimpan dengan aman dan hanya digunakan untuk keperluan pelayanan, pengiriman, dan peningkatan pengalaman pengguna.\n\nKami tidak akan membagikan data Anda kepada pihak ketiga tanpa persetujuan kecuali diwajibkan oleh hukum. Pengguna dapat meminta penghapusan data kapan saja melalui menu Kontak Kami."
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

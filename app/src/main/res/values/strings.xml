@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Trendify</string>
+
+    <!-- login -->
+    <string name="masuk">Masuk</string>
+    <string name="caption_lgn">Akses akunmu dan temukan tren terbaru yang sesuai dengan gayamu!</string>
+    <string name="email">Masukkan Email</string>
+    <string name="pswd">Masukkan Password</string>
+
+    <!-- Beranda -->
+    <string name="user">Hi, User</string>
+    <string name="cari">Cari</string>
+    <string name="product_image_desc">Foto</string>
+
+    <string name="product_image_placeholder">Product Image</string>
+</resources>

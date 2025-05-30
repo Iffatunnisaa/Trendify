@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFBEF">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_berhasil"
+        android:backgroundTint="#6B4D3F"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran Berhasil!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesanan Anda sedang diproses"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnInfoPesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Info Pesanan"
+        android:backgroundTint="#6B4D3F"
+        android:textColor="#FFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali ke Beranda"
+        android:backgroundTint="#D3C2A1"
+        android:textColor="#000"/>
+
+</LinearLayout>

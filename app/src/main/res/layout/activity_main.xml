@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF7F1"
+    tools:context=".MainActivity">
+
+    <!-- Gambar Fashion 1 (kiri besar) -->
+    <ImageView
+        android:id="@+id/imgFashion1"
+        android:layout_width="186dp"
+        android:layout_height="482dp"
+        android:layout_margin="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fashion1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgFashion2"
+        app:layout_constraintDimensionRatio="2:5" />
+
+    <!-- Gambar Fashion 2 (kanan atas) -->
+    <ImageView
+        android:id="@+id/imgFashion2"
+        android:layout_width="142dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fashion2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imgFashion3"
+        app:layout_constraintStart_toEndOf="@+id/imgFashion1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="3:4" />
+
+    <!-- Gambar Fashion 3 (kanan bawah) -->
+    <ImageView
+        android:id="@+id/imgFashion3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fashion3"
+        app:layout_constraintTop_toBottomOf="@id/imgFashion2"
+        app:layout_constraintBottom_toTopOf="@id/textWelcome"
+        app:layout_constraintStart_toEndOf="@+id/imgFashion1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="2:3" />
+
+    <!-- Text Selamat Datang -->
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center"
+        android:text="Selamat datang di Trendify!"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgFashion1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Text Deskripsi -->
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center"
+        android:text="Jelajahi tren terbaru, temukan gaya unikmu,\ndan belanja fashion favorit dengan mudah.\nYuk, mulai tampil stylish bersama Trendify!"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/textWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol Masuk -->
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6C4C3F"
+        android:text="Masuk"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/textDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Link Daftar -->
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Belum punya akun? Daftar"
+        android:textColor="#6C4C3F"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/btnMasuk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

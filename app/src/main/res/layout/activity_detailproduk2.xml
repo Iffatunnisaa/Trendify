@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF7F0">
+
+    <!-- Konten scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FAF7F0">
+
+            <!-- Section: Header & Product Image (Coklat) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#D8C4B6"
+                android:padding="16dp">
+
+                <!-- Header -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btn_back2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/circle_background"
+                        android:src="@drawable/ic_back"
+                        android:contentDescription="Kembali" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Product Details"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#000" />
+
+                    <ImageButton
+                        android:id="@+id/btn_cart2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/circle_background"
+                        android:src="@drawable/ic_keranjang"
+                        android:contentDescription="Keranjang" />
+                </RelativeLayout>
+
+                <!-- Product Image -->
+                <ImageView
+                    android:id="@+id/ivImageProduk2"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/product2"
+                    android:contentDescription="Produk utama" />
+            </LinearLayout>
+
+            <!-- Informasi Produk -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Nama Produk dan Rating -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:id="@+id/tvName2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Long Dress"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_bintang"
+                        app:tint="#FFD700"
+                        android:layout_marginEnd="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Harga -->
+                <TextView
+                    android:id="@+id/tvPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp210.000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <!-- Deskripsi -->
+                <TextView
+                    android:text="Deskripsi :"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Tampil anggun dan nyaman setiap hari dengan Long Dress berbahan katun premium. Dirancang dengan gaya klasik modern, dress ini memiliki potongan A-line yang memberi kesan ramping dan elegan. Bahannya lembut, ringan, adem di kulit, dan tidak menerawang—cocok untuk aktivitas harian, kuliah, kerja, maupun acara santai."
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="📌 Bahan katun premium – lembut, adem, dan nyaman dipakai sepanjang hari.\n📌 Dilengkapi sabuk pinggang untuk tampilan lebih ramping."
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DDDDDD"
+                    android:layout_marginVertical="12dp" />
+
+                <!-- Warna -->
+                <TextView
+                    android:text="Warna: Coklat"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- Bulatan Warna -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Contoh warna: ganti drawable dengan shape XML -->
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/ic_khaki"
+                        android:contentDescription="Mocha" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/ic_mauve"
+                        android:contentDescription="Soft Pink" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/ic_bata"
+                        android:contentDescription="Brown" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:spacing="8dp">
+
+                    <ImageButton
+                        android:id="@+id/btnDecrease2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_quantity_button"
+                        android:src="@drawable/ic_mines"
+                        android:contentDescription="Kurangi"
+                        android:scaleType="center"
+                        android:padding="8dp"
+                        android:backgroundTint="@android:color/transparent"
+                        app:tint="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvQuantity2"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/btnIncrease2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_quantity_button"
+                        android:src="@drawable/ic_plus"
+                        android:contentDescription="Tambah"
+                        android:scaleType="center"
+                        android:padding="8dp"
+                        android:backgroundTint="@android:color/transparent"
+                        app:tint="#000000" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tvTotal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp210.000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/btnCheckout2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="Checkout"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#A9907E"
+            android:paddingHorizontal="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnAddToCart2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_toStartOf="@id/btnCheckout2"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true"
+            android:text="Tambah ke Keranjang"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#A9907E"
+            android:paddingHorizontal="16dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
